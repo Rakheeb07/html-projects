@@ -1,19 +1,247 @@
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e0b16; /* Dark background */
+    color: #d1d1e9; /* Light text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1f1b24; /* Slightly lighter dark background */
+    border-bottom: 3px solid #e84545; /* Neon red border */
+}
+
+header h1 {
+    color: #e84545; /* Neon red for name */
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #d1d1e9; /* Light grey for tagline */
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e84545; /* Neon red for navigation links */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Section Styles */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #1f1b24; /* Dark section background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* About Section Styles */
+#about h2 {
+    color: #f5a623; /* Neon orange for section title */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Skills Section Styles */
+#skills h2 {
+    color: #f5a623; /* Neon orange for section title */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    margin: 20px;
+}
+
+.skill i {
+    font-size: 3em;
+    color: #28a745; /* Neon green for icons */
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    color: #d1d1e9;
+    margin-bottom: 5px;
+}
+
+.skill p {
+    color: #b0b0b0;
+}
+
+/* Projects Section Styles */
+#projects h2 {
+    color: #f5a623; /* Neon orange for section title */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #28a745; /* Neon green for project titles */
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #d1d1e9;
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #e84545; /* Neon red for project links */
+    text-decoration: none;
+    border-bottom: 1px solid #e84545;
+    padding-bottom: 2px;
+}
+
+.project a:hover {
+    color: #f5a623; /* Neon orange on hover */
+    border-bottom-color: #f5a623;
+}
+
+/* Contact Section Styles */
+#contact h2 {
+    color: #f5a623; /* Neon orange for section title */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #28a745; /* Neon green for email link */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #f5a623; /* Neon orange on hover */
+}
+
+.social-icons a {
+    color: #d1d1e9;
+    font-size: 2em;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #e84545; /* Neon red on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+</style>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>shapes game</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
-    <div id="main">
-        <div id="box">
-            <div id="square" class="shape"><h1>1</h1></div>
-            <div id="diamond" class="shape"><h1>2</h1></div>
+    <!-- Header Section -->
+    <header>
+        <h1>ABDUL RAKHEEB</h1>
+        <p>Software Engineer | Developer | Innovator</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate software engineer with a knack for building efficient, scalable applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver robust solutions.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Java, Python, JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-server"></i>
+                <h3>Back-End</h3>
+                <p>Node.js, Express, SQL, MongoDB</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Front-End</h3>
+                <p>React, Angular, HTML, CSS</p>
+            </div>
+            <!-- Add more skills as needed -->
         </div>
-        <div id="circle" class="shape"><h1>3</h1></div>
-    
-    </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Name</h3>
+            <p>Description of the project, technologies used, and the purpose of the project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me via email or connect with me on social media.</p>
+        <a href="mailto:your-email@example.com">your-email@example.com</a>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/kings_ar08?igsh=MTVvdjZlcGN2cmVpMg=="><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 RAKHEEB. All rights reserved.</p>
+    </footer>
 </body>
 </html>
